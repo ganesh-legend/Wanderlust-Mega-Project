@@ -9,6 +9,7 @@ WanderLust is a simple MERN travel blog website ✈ This project is aimed to hel
 ### - 1) As soon as you create kubeadm cluster with one master and one worker node, edit replica count of coredns deployment in master node to 4, so it will resolve dns for worker node.
 ### - 2) Change VITE_API_PATH in .env.docker file in frontend directory. (set your worker node ip followed by port of backend service. eg. 40.234.1.22:31100 )
 ### - 3) change FRONTEND_URL="http://worker_node_ip_address:5173" in .env.docker in backend directory.
+### - 4) Don't follow this readme file cause this is for AWS EKS deployment.
 
 #
 
