@@ -5,6 +5,13 @@ WanderLust is a simple MERN travel blog website ✈ This project is aimed to hel
 ![Preview Image](https://github.com/krishnaacharyaa/wanderlust/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
 #
 
+## *Note:- If you are performing this on kubeadm cluster then make sure to make given changes.*
+### - 1) As soon as you create kubeadm cluster with one master and one worker node, edit replica count of coredns deployment in master node to 4, so it will resolve dns for worker node.
+### - 2) Change VITE_API_PATH in .env.docker file in frontend directory. (set your worker node ip followed by port of backend service. eg. 40.234.1.22:31100 )
+### - 3) change FRONTEND_URL="http://worker_node_ip_address:5173" in .env.docker in backend directory.
+
+#
+
 # Wanderlust Mega Project End to End Implementation
 
 ### In this demo, we will see how to deploy an end to end three tier MERN stack application on EKS cluster.
